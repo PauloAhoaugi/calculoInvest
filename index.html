@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Calculadora de Investimentos</title>
   </head>
-  <body class="grid grid-cols-3 grid-rows-2 h-dvh">
+  <body class="grid grid-cols-3 grid-rows-2 h-[100dvh]">
     <aside
       class="bg-emerald-300 row-span-2 flex flex-col justify-between py-5 px-2"
     >
@@ -140,8 +140,18 @@
         </button>
       </div>
     </aside>
-    <main>
-      <p>Resultados</p>
+
+    <main class="h-full">
+      <section id="charts-container">
+        <div class="h-[36dvh]">
+          <p>Resultado Final</p>
+          <canvas id="final-money-distribution"></canvas>
+        </div>
+        <div class="h-[56dvh]">
+          <p>Progressão</p>
+          <canvas id="progression"></canvas>
+        </div>
+      </section>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
