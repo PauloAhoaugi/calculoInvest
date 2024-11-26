@@ -181,6 +181,6 @@ for (const formElement of form) {
 }
 
 // <p class="text-red-500">Insira um valor numérico e maior que zero</p>
-form.addEventListener('submit', renderProgression);
+// form.addEventListener('submit', renderProgression);
 // calculateButton.addEventListener('click', renderProgression);
 clearFormButton.addEventListener('click', clearForm);
